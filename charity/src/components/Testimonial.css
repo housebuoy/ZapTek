@@ -1,0 +1,119 @@
+.Testimonial{
+    display: flex;
+    padding-left: 80px;
+    background: #FAFAFA;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    gap:40px;
+    font-family: 'Outfit';
+}
+
+.TestimonialLeft{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.overlapImage{
+    position: absolute;
+    bottom: -4px;
+}
+
+.TestimonialRight{
+    width: 600px;
+    padding-top: 250px;
+}
+
+.TestimonialRight>h3{
+    color: #9F5FFE;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.TestimonialRight>h1{
+    color: #1D1D1D;
+    font-family: Outfit;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 550px;
+}
+
+.TestimonialRight>h1>span{
+    color: #9F5FFE;
+}
+
+.TestimonialRight>p{
+    width: 560px;
+    color: #696969;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+}
+
+.TestimonialRight>h4{
+    color: var(--Black, #232323);
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.TestimonialRight>h5{
+    color: var(--Grey, #696969);
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -20px;
+}
+
+@media (max-width:480px) {
+    .Testimonial{
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    background: #FAFAFA;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    gap: 10px;
+    font-family: 'Outfit';
+}
+    .TestimonialLeft>.overlapImage>img{
+        width: 300px;
+    }
+    .TestimonialLeft>img{
+        width: 350px;
+        height: 400px;
+        margin-left: -90px;
+    }
+    .overlapImage{
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+    }
+    .TestimonialRight{
+        width: 300px;
+        padding-top: 25px;
+        margin-left: -60px;
+    }
+    .TestimonialRight>h1{
+        font-size: 46px;
+        width: 350px;
+    }
+    .TestimonialRight>p{
+        width: 330px;
+    }
+    
+}

@@ -1,0 +1,150 @@
+.OurCampaign{
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    background: #FAFAFA;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+
+.OurCampaignText > h3{
+    color: #9F5FFE;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.OurCampaignText > h1{
+    width: 457px;
+    color: #1D1D1D;
+    font-family: Outfit;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.OurCampaignDonations{
+    display: flex;
+    gap: 40px;
+}
+
+.Donations{
+    border-radius: 22px;
+    background: #FFF;
+    width: 300px;
+    height: 498px;
+    flex-shrink: 0;
+    border-radius: 23px;
+}
+
+.Donations img{
+    border-radius: 12px;
+    width: 300px;
+    height: 232px;
+    flex-shrink: 0;
+}
+
+.Donations p{
+    color: #1D1D1D;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+.Donations .Buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.Donations > .Buttons > button{
+    border-radius: 8px;
+    background: #1AD0D1;
+    border: none;
+    display: flex;
+    width: 142px;
+    height: 51px;
+    padding: 14px 22px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #ddd;
+    margin-right: 30px;
+}
+
+.Donations > .Buttons >  span > button{
+    border-radius: 8px;
+    display: inline-flex;
+    padding: 14px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #1AD0D1;
+    background-color: transparent;
+    border: 1px solid #1AD0D1;
+}
+
+.progressDisplay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progressDisplay>p{
+    color: #1D1D1D;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.progressDisplay > span > p{
+    color: #8A8A8A;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.progressBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .OurCampaign{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    .OurCampaignDonations{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .OurCampaignText > h1{
+        width: 280px;
+        color: #1D1D1D;
+        font-family: Outfit;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+  }

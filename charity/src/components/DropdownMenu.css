@@ -1,0 +1,67 @@
+* > a,
+* > button{
+    font-family: 'Outfit', sans-serif;
+    color: #9F5FFE;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.category{
+    font-family: "Outfit", sans-serif;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    width: 14%;
+    border-radius: 5px;
+}
+
+.dropdown-toggle{
+    border: none;
+    background:  #fff;
+    height: 40px;
+    text-align: left;
+    padding-left: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.dropdown{
+    background: #fff;
+    border-radius: 8px;
+    position: static;
+    width: 200px;
+    margin-right: -9px;    
+}
+
+
+.dropdown > *{
+    font-family: 'Outfit', sans-serif;
+    color: #9F5FFE;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: none;
+}
+
+.sidebarSubtitle{
+    border: none;
+    background: rgb(255, 254, 254);
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 600;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.CategoryItems{
+    margin-top: 10px;
+}
+

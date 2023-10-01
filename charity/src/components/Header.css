@@ -1,0 +1,103 @@
+.Header{
+    position: fixed;
+    top: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Outfit', 'Poppins', sans-serif;
+    margin-top: 20px;
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 180px;
+}
+
+.logo h2{
+    font-weight: 600;
+    font-size: 25px;
+    color: black;
+    margin-left: 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 45px;
+}
+
+nav > *{
+    margin-left: 25px;
+}
+
+nav button{
+    width: 193px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #9F5FFE;
+    color: #9F5FFE;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 137.5% */
+    text-transform: capitalize;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > a > button > span> *{
+    width: 18px;
+    margin-left: 10px
+}
+
+nav > a button >span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > a > button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+nav > a {
+    position: relative;
+    transition: border-bottom 0.3s ease-in;
+  }
+  
+  nav > a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #1AD0D1;
+    transition: width 0.3s ease-in;
+    transform: translateX(-50%);
+  }
+  
+  nav > a:hover::after {
+    width: 80%;
+  }
+
+
+  @media (max-width: 480px) {
+    .logo{
+        margin-left: 20px;
+    }
+  }

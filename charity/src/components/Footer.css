@@ -1,0 +1,207 @@
+.Footer{
+  display: flex;
+  flex-direction: column;  
+  font-family: Outfit, Poppins, sans-serif;
+  margin-top: 100px;
+}
+
+.FooterHead{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+.FooterHeadLogo{
+    width: 318px;
+    margin-right: 60px;
+}
+
+.FooterLogo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding-left: 30px;
+} 
+
+.FooterLogo >h2{
+    color: #1D1D1D;
+    font-family: Outfit;
+    font-size: 24.8px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.FooterHeadLogo > p{
+    color: #6F7775;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+}
+
+.socialLinks{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.Menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 200px;
+    gap: 10px;
+}
+
+.Menu > h2,
+.AboutUs > h2{
+    color: #1D1D1D;
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.Menu > a,
+.AboutUs > a{
+    color: #6F7775;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AboutUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 200px;
+    gap: 10px;
+}
+
+.image-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.image{
+    background: #1AD0D1;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.image > *{
+    width: 16px;
+}
+
+.info h3{
+    color: #1D1D1D;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    margin-bottom: -10px;
+}
+
+.info p{
+    color: #6F7775;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.FooterLine {
+    height: 70px;
+    flex-shrink: 0;
+    background: #9F5FFE;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--White, #FFF);
+    /* Text 16 Medium */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 137.5% */
+  }
+
+
+  @media (max-width:480px) {
+    .FooterHeadLogo > .socialLinks{
+        display: none;
+    }
+
+    .FooterHeadLogo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .FooterHead{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FooterLogo{
+        flex-direction: column;
+        gap: 0px;
+        margin-left: -10px;
+    } 
+    .Menu, .AboutUs{
+        display: none;
+    }
+    .Contact >h3{
+        display: none;
+    }
+    .Contact{
+        display: flex;
+        margin-left: 0px;
+    }
+    .image-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin-right: 20px;
+    }
+    .info p{
+        color: #6F7775;
+        font-family: Outfit;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  }

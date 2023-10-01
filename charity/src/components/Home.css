@@ -1,0 +1,297 @@
+.Home {
+    background-image: url(../../public/images/map.svg);
+    background-size: cover;
+    height: 120vh;
+    margin-top: 120px;
+    width: 100vw;
+    padding-top: 60px;
+    display: flex;
+    font-family: 'Outfit', sans-serif; 
+    padding-left: 40px;
+    gap: 40px;
+    overflow-x: hidden;
+}
+
+.Home > .homeLeft{
+    width: 520px;
+}
+
+.Home > .homeLeft > .TextArea > h3{
+    font-size: 16px;
+    color: #9F5FFE;
+    font-weight: 500;
+}
+
+.Home > .homeLeft > .TextArea > h1{
+    color: #1D1D1D;
+    font-family: Outfit;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.Home > .homeLeft > .TextArea > h1> span{
+    color: #9F5FFE;
+    font-family: Outfit;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 512px;
+}
+
+.Home > .homeLeft > .TextArea > p{
+    color: #989898;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.buttonSection button{
+    border-radius: 8px;
+    background: #1AD0D1;
+    display: inline-flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    color: #FDFDFD;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonSection span button{
+    border-radius: 50%;
+    background: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonSection span button img{
+    width: 40px;
+}
+
+
+.buttonSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.homeRight .DonationProgress{
+    width: 520px;
+    height: 522px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 10px 25px 0px rgba(33, 52, 48, 0.08);
+    padding: 40px 40px;
+    position: relative;
+    z-index: 90;
+}
+
+.homeRight .DonationProgress > button{
+    border-radius: 8px;
+    background: #1AD0D1;
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    color: #FDFDFD;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer
+}
+
+.homeRight .DonationProgress h2{
+    color: #213430;
+    font-family: Outfit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 118.519% */
+}
+
+.homeRight .DonationProgress .progressBar{
+    width: 440px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F5F5F5;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.donationTargets{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #213430;
+    font-family: Outfit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+  .Goal{
+    margin-left: 160px;
+  }
+
+  .donationTargets span{
+    color: #6F7775;
+    font-family: Outfit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .payButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 20px;
+  }
+
+  .payButton > button{
+    border-radius: 5px;
+    border: 1px solid #DDD;
+    width: 210px;
+    height: 58px;
+    flex-shrink: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .smallHand{
+    background-color: #1AD0D1;
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homeRight{
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  .DonationProgress {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .smallerDiv {
+    border-radius: 10px;
+    background: #1AD0D1;
+    position: absolute;
+    bottom: 100px; /* Adjust the positioning as desired */
+    right: 10px; /* Adjust the positioning as desired */
+    z-index: 0;
+    width: 250px;
+    height: 400px;
+    flex-shrink: 0;
+  }
+
+  /* cereating media queries */
+
+
+  @media (max-width:480px) {
+    .Home {
+      flex-direction: column;
+      padding-right: 20px;
+      padding-top: 20px;
+      height: fit-content;
+      padding-left: 10px;
+      gap: 60px;
+      padding-bottom: 60px;
+    }
+
+    .Home > .homeLeft{
+      width: 320px;
+   }
+  
+    .homeLeft ,
+    .homeRight{
+      width: 100%;
+    }
+
+    .homeRight{
+      width: 90%;
+    }
+    .homeRight .DonationProgress{
+      width: 70%;
+      height: fit-content;  
+      padding-top: 50px;
+    }
+
+    .homeRight .DonationProgress .progressBar{
+      width: 240px;
+      height: 100px;
+      margin-left: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .smallHand{
+      background-color: #1AD0D1;
+      width: 60px;
+      height: 60px;
+      top: 0;
+      z-index: 99;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .smallHand img{
+      width: 40px;
+    }
+
+    .smallerDiv {
+      border-radius: 10px;
+      background: #1AD0D1;
+      position: absolute;
+      bottom: 0px; 
+      right: 10px; 
+      z-index: 0;
+      width: 250px;
+      height: 450px;
+      flex-shrink: 0;
+    }
+
+    .payButton{
+      margin-top: 40px;
+      gap: 10px;
+    }
+    
+  }
